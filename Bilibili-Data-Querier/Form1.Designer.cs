@@ -108,7 +108,6 @@
             // 
             // dropdown1
             // 
-            this.dropdown1.AutoSizeMode = AntdUI.TAutoSize.Auto;
             this.dropdown1.DropDownArrow = true;
             this.dropdown1.DropDownTextAlign = AntdUI.TAlign.Bottom;
             this.dropdown1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -117,12 +116,15 @@
             this.dropdown1.IconSvg = "DownOutlined";
             this.dropdown1.Items.AddRange(new object[] {
             "用户UID",
-            "直播间ID"});
+            "直播间ID",
+            "视频BV号",
+            "视频AV号"});
             this.dropdown1.Location = new System.Drawing.Point(90, 5);
             this.dropdown1.Name = "dropdown1";
             this.dropdown1.Size = new System.Drawing.Size(144, 36);
             this.dropdown1.TabIndex = 36;
             this.dropdown1.Text = "下拉选择查询的选项";
+            this.dropdown1.SelectedValueChanged += new AntdUI.ObjectNEventHandler(this.dropdown1_SelectedValueChanged);
             // 
             // Form1
             // 
@@ -137,7 +139,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
